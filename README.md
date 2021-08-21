@@ -1,10 +1,10 @@
-# Cleanlux API
+# PhotoPie API
 
 PhotoPie API is a Node Application. It's hosted on Heroku.
 
 ## APIs
 
-[https://cleanlux.herokuapp.com/[api]](https://cleanlux.herokuapp.com/)
+[https://photo-pie.herokuapp.com//[api]](https://photo-pie.herokuapp.com/)
 
 * GET - /services - For all services
 * GET - /service/:id - For a single service

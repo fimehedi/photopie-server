@@ -4,7 +4,7 @@ PhotoPie API is a Node Application. It's hosted on Heroku.
 
 ## APIs
 
-[https://photo-pie.herokuapp.com//[api]](https://photo-pie.herokuapp.com/)
+[https://api-photopie.onrender.com/[api]](https://photo-pie.herokuapp.com/)
 
 * GET - /services - For all services
 * GET - /service/:id - For a single service

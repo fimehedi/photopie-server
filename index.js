@@ -18,7 +18,15 @@ const DB_USER = process.env.DB_USER;
 const uri = `mongodb+srv://${DB_USER}:${DB_PASS}@cluster0.mvaju.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
-    console.log(err ? 'Error: ' + err.errmsg : 'Database Connected!');
+    err ? console.error(err.message) : console.info("Database Connected Successfully!")
+
+    app.get('/', (req, res, next) => {
+        res.send({
+            status: 'OK',
+            code: 200
+        })
+    })
+
     // Services
     const servicesCollection = client.db(DB_NAME).collection("services");
     app.get('/services', (req, res) => {
